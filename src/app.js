@@ -40,7 +40,7 @@ app.use(session({
     saveUninitialized: true
 }))
 
-app.use('/api/home', viewsRouter)
+app.use('/', viewsRouter)
 app.use('/api/registro', registroRouter )
 app.use('/api/login', loginRouter )
 app.use('/api/products', productsRoutes)

@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 router.get('/user', async (req, res) => {
     const {email, password} = req.query
     try {
-        if (email === 'coder@admin.com' && password === 'admin321'){
+        if (email === 'adminCoder@coder.com' && password === 'adminCod3r123'){
             req.session.user = email
             req.session.admin = true
             return res.status(200).send({message:'success'})
